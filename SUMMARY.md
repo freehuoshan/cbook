@@ -7,6 +7,7 @@
 * [第三章 流控制](lkz/README.md)
 * [第四章 函数与程序结构](hc/README.md)
 * [第五章 指针与数组](zs/README.md)
+    * [指针与地址](zs/zd.md)
 * [第六章 结构](jg/README.md)
 * [第七章 输入与输出](ss/README.md)
 * [第八章 UNIX系统接口](unix/README.md)
