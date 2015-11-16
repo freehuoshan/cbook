@@ -1,3 +1,5 @@
+## 简绍
+---
 > 通常机器都有一系列连续编号或编址的存储单元，这些存储单元可以以单个进行操纵，也可以以连续成组的方式操纵，通常一个字节的存储单元可以存放一个char类型数据，两个字节存储单元可以存放一个short类型数据，四个字节存储单元可以存放一个long类型数据（根据机器不同，每种类型所占字节会有所不同）<br/>
 指针是用来存储一个地址的一组存储单元（通常是两个或四个字节）
 <br/>
@@ -21,7 +23,9 @@
     * I：指向变量I的存储单元
     
 
-[看大图](http://7xocno.com1.z0.glb.clouddn.com/point-address-detail.png)
+## 图解
+---
+<center>[看大图](http://7xocno.com1.z0.glb.clouddn.com/point-address-detail.png)
 ![http://7xocno.com1.z0.glb.clouddn.com/point-address-detail.png](http://7xocno.com1.z0.glb.clouddn.com/point-address-detail.png)
 
 
