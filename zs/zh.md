@@ -40,7 +40,7 @@ swap.c
 
     swap(&a,&b);
 
-oK，这样就会把原来真是的值交换了
+oK，这样就会把原来的值交换了
 
 
 ![swap2](http://7xocno.com1.z0.glb.clouddn.com/swap2.png)
