@@ -54,3 +54,10 @@ arr[7]:0,&arr[7]:1e58054c
 ###*可以说指针是变量指针，数组是常量指针*
 
 ---
+
+## 图解
+
+<center>[看大图](http://7xocno.com1.z0.glb.clouddn.com/2015-11-16%2022%3A44%3A47屏幕截图.png)
+
+![pointaddr](http://7xocno.com1.z0.glb.clouddn.com/2015-11-16%2022%3A44%3A47屏幕截图.png)
+
