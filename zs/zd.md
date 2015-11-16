@@ -16,8 +16,12 @@
 3. * 所以，在声明时int \*是用于说明声明的变量为指针变量
    * 使用时在指针变量前加\*,如\*P，这个\*P与I是有等价意义的，都是用于操纵I=4这个存储单元的变量
    * 在这里有三个变量P，\*P，I
-    * P：整形指针变量，用于存储变量I的地址
-    * \*P：
+    * P：整形指针变量，指向存储变量I地址的存储单元
+    * \*P：指向变量I的存储单元
+    * I：指向变量I的存储单元
+    
+
+![http://7xocno.com1.z0.glb.clouddn.com/point-address-detail.png](http://7xocno.com1.z0.glb.clouddn.com/point-address-detail.png)
 
 
 
