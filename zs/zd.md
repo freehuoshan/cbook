@@ -6,10 +6,15 @@
 
 ![zhizheng](http://7xocno.com1.z0.glb.clouddn.com/point-address.png)
 
+## 指针
 
 > **指针变量p与整型变量I没有任何不同，只是I用来存储整形变量4在存储单元中占用4个字节，而P用来存储变量I的地址在存储单元中占用4个字节(这里的4个字节用于本例，根据机器不同会有所不同)**<br/>
 
+## 地址
+> **p = &I,取地址运算符&可以取出某个对象的地址编号**
 
+
+## 详述
 *需要注意的是：*
 
 
@@ -28,6 +33,9 @@
 <center>[看大图](http://7xocno.com1.z0.glb.clouddn.com/point-address-detail.png)
 ![http://7xocno.com1.z0.glb.clouddn.com/point-address-detail.png](http://7xocno.com1.z0.glb.clouddn.com/point-address-detail.png)
 
+
+## 总结
+---
 
 
 
