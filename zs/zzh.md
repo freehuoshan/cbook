@@ -26,6 +26,16 @@ char *pmess = "hello world";
 可以这样说: arrmess是一个数组，pmess是一个指针。那么可以说arrmess是一个常量指针，pmess是一个变量指针
 
 
+![char-point](http://7xocno.com1.z0.glb.clouddn.com/char-point.png)
+
+
+** 对于pmess = "hello world";是将匿名指针的内容拷贝到pmess中，让pmess指针指向字符串。**
+
+** arrmess是一个常量指针，不可以改变再指向其他地址。**
+
+** pmess是一个变量指针，可以改变再指向其他地址**
+
+
 
 
 
