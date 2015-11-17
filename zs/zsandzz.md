@@ -7,12 +7,15 @@
 
 
 
+## 代码
 
+
+> 以下代码是一个输入字符，然后根据每行排序，最后输出的程序，里边几乎设计了C语言指针的所有细节
 
     #include <stdio.h>
     #include <string.h>
     
-    #define MAXLINES 5000                                   /* 打印行数峰值 */
+    #define MAXLINES 3                                   	/* 打印行数峰值 */
     char *lineptr[MAXLINES];                                /* 指针数组，元素指向每行首地址 */
     
     int readlines(char *lineptr[], int nlines);
@@ -35,22 +38,21 @@
     
     #define MAXLEN 1000                                     /* 每行长度峰值 */
     
-    int getline(char *, int);
+    int getline2(char *, int);
     char *alloc(int);
     
     /* 读取输入的字符，返回行数 */
-    int readlines(char *lineptr[], int maxlines)        
+    int readlines(char *lineptr[], int maxlines)
     {
         int len, nlines;                                    /* len:每行长度，nlines:行数 */
         char *p, line[MAXLEN];
         nlines = 0;
-        while ((len = getline(line, MAXLEN)) > 0){          /* 将字符串读取到line数组，
-                                                        然后让指针数组元素指向line数组首地址*/    
-            if (nlines >= maxlines || p = alloc(len) == NULL)
+        while ((len = getline2(line, MAXLEN)) > 0){
+            if (nlines >= maxlines || (p = alloc(len)) == NULL)
                 return 1;
             else {
     //          line[len - 1]= '\0';       /* delete newline */
-                strcpy(p, line);
+                strcpy(p, line);							/* 将字符数组内容拷贝到p指向的地址 */
                 lineptr[nlines++] = p;
             }
         }
@@ -62,15 +64,15 @@
     {
         int i;
         for (i = 0; i < nlines; i++)
-        printf("%s\n", lineptr[i]);
+        printf("%s\n", lineptr[i]);		
     }
     
     
     /* 读写输入到s字符中，返回字符数组长度 */
-    int getline(char s[],int lim)
+    int getline2(char *s,int lim)
     {
         int c, i;
-        for (i=0; i < lim1 && (c=getchar())!=EOF && c!='\n'; ++i)
+        for (i=0; i < lim - 1 && (c=getchar())!=EOF && c!='\n'; ++i)
             s[i] = c;
         if (c == '\n') {
             s[i] = c;
@@ -80,11 +82,15 @@
         return i;
     }
     
+    #define ALLOCSIZE 10000             /* 给予空间总大小 */
+    static char allocbuf[ALLOCSIZE];    /* 将总空间抽象为一个数组，实质还是一个指针 */
+    static char *allocp = allocbuf;     /* 闲置空间起始指针allocp，初始化为数组起始位置 */
+    
      /* 分配空间后，返回分配空间的起始位置指针 */
-    char *alloc(int n) 
+    char *alloc(int n)
     {
         if (allocbuf + ALLOCSIZE - allocp>= n)
-        { 
+        {
             allocp += n;
             return allocp-n;
         }
@@ -92,4 +98,32 @@
         {
             return 0;
         }
+    }
+    
+    /* qsort: sort v[left]...v[right] into increasing order */
+    void qsort(char *v[], int left, int right)
+    {
+    	int i, last;
+    	void swap(char *v[], int i, int j);
+    	if (left >= right) /* do nothing if array contains */
+    	return;
+    	/* fewer than two elements */
+    	swap(v, left, (left + right)/2);
+    	last = left;
+    	for (i = left+1; i <= right; i++)
+    		if (strcmp(v[i], v[left]) < 0)
+    			swap(v, ++last, i);
+    	swap(v, left, last);
+    	qsort(v, left, last-1);
+    	qsort(v, last+1, right);
+    }
+    
+    
+    /* swap: interchange v[i] and v[j] */
+    void swap(char *v[], int i, int j)
+    {
+    	char *temp;
+    	temp = v[i];
+    	v[i] = v[j];
+    	v[j] = temp;
     }
