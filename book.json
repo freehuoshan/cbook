@@ -1,4 +1,4 @@
-"fontSettings": {
+"font": {
         "theme": "sepia", "night" or "white",
         "family": "Courier New",
         "size": 1 to 4
