@@ -25,7 +25,7 @@
         allocp = p;
     }
 
-
+![内存分配](http://7xocno.com1.z0.glb.clouddn.com/address-yunsuan.png)
 
 
     
