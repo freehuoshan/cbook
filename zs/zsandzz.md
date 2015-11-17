@@ -39,12 +39,12 @@
     char *alloc(int);
     
     /* 读取输入的字符，返回行数 */
-    int readlines(char *lineptr[], int maxlines)
+    int readlines(char *lineptr[], int maxlines)        
     {
-        int len, nlines;
+        int len, nlines;                                    /* len:每行长度，nlines:行数 */
         char *p, line[MAXLEN];
         nlines = 0;
-        while ((len = getline(line, MAXLEN)) > 0)
+        while ((len = getline(line, MAXLEN)) > 0){          /* 将字符串读取到line数组，然后让指针数组元素指向line数组首地址
             if (nlines >= maxlines || p = alloc(len) == NULL)
                 return 1;
             else {
@@ -52,6 +52,7 @@
                 strcpy(p, line);
                 lineptr[nlines++] = p;
             }
+        }
         return nlines;
     }
     
