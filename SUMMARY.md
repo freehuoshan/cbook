@@ -12,6 +12,7 @@
     * [指针与数组](zs/zs.md)
     * [地址算术运算](zs/ds.md)
     * [字符指针与函数](zs/zzh.md)
+    * [指针数组以及指向指针的指针](zs/zsandzz.md)
 * [第六章 结构](jg/README.md)
 * [第七章 输入与输出](ss/README.md)
 * [第八章 UNIX系统接口](unix/README.md)
