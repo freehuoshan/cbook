@@ -15,6 +15,7 @@
     * [指针数组以及指向指针的指针](zs/zsandzz.md)
     * [多维数组](zs/duos.md)
     * [指针数组初始化](zs/zsc.md)
+    * [指针与多维数组](zs/zduo.md)
 * [第六章 结构](jg/README.md)
 * [第七章 输入与输出](ss/README.md)
 * [第八章 UNIX系统接口](unix/README.md)
