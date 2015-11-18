@@ -4,6 +4,10 @@
 ![duo-arr](http://7xocno.com1.z0.glb.clouddn.com/duo-arr.png)
 
 
+** 此时data[0]即\*data是指向第一行的指针，存放第一行起始地址,(\*data)[1]即data[0][1]是第一行第二列值<br/>
+data[1]即\*(data+1)是指向第二行的指针，存放第二行起始地址，(\*(data+1))[1]即data[1][1]是第二行第二列的值**
+
+
 ## 代码
 
 > day_of_year：将某年某月某日，转换为某年第几天<br/>
