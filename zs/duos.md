@@ -1,7 +1,7 @@
 > 在C语言中，二维数组实际上是一个特殊的一维数组，相当于一个一维数组中每个元素是一个一维数组。因为数组就是一个指针，所以本质上说，二维数据就是一个指针数组。
 
 
-![duo-arr](http://7xocno.com1.z0.glb.clouddn.com/duo-arr.png)
+![duo-arr](http://7xocno.com1.z0.glb.clouddn.com/duo-arr1.png)
 
 
 ** 此时data[0]即\*data是指向第一行的指针，存放第一行起始地址,(\*data)[1]即data[0][1]是第一行第二列值<br/>
