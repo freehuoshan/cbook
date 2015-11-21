@@ -1,0 +1,456 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>指针与地址 | My Awesome Book</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="../styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="../zs/zh.html" />
+    
+    
+    <link rel="prev" href="../zs/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="5.1" data-chapter-title="指针与地址" data-filepath="zs/zd.md" data-basepath=".." data-revision="Wed Nov 18 2015 21:46:31 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="dy/index.html">
+            
+                
+                    <a href="../dy/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        第一章 导言
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="dy/rm.html">
+            
+                
+                    <a href="../dy/rm.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        入门
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="dy/bf.html">
+            
+                
+                    <a href="../dy/bf.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        变量与算术表达式
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="lxb/index.html">
+            
+            <span><b>2.</b> 第二章 类型、运算符、表达式</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="lkz/index.html">
+            
+            <span><b>3.</b> 第三章 流控制</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="hc/index.html">
+            
+            <span><b>4.</b> 第四章 函数与程序结构</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="zs/index.html">
+            
+                
+                    <a href="../zs/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        第五章 指针与数组
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="5.1" data-path="zs/zd.html">
+            
+                
+                    <a href="../zs/zd.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        指针与地址
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="zs/zh.html">
+            
+                
+                    <a href="../zs/zh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        指针与函数参数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="zs/zs.html">
+            
+                
+                    <a href="../zs/zs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        指针与数组
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="zs/ds.html">
+            
+                
+                    <a href="../zs/ds.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        地址算术运算
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="zs/zzh.html">
+            
+                
+                    <a href="../zs/zzh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        字符指针与函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="zs/zsandzz.html">
+            
+                
+                    <a href="../zs/zsandzz.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        指针数组以及指向指针的指针
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="zs/duos.html">
+            
+                
+                    <a href="../zs/duos.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        多维数组
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="zs/zsc.html">
+            
+                
+                    <a href="../zs/zsc.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        指针数组初始化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="zs/zduo.html">
+            
+                
+                    <a href="../zs/zduo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        指针与多维数组
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="jg/index.html">
+            
+            <span><b>6.</b> 第六章 结构</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="ss/index.html">
+            
+            <span><b>7.</b> 第七章 输入与输出</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="unix/index.html">
+            
+            <span><b>8.</b> 第八章 UNIX系统接口</span>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >My Awesome Book</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="&#x7B80;&#x7ECD;">&#x7B80;&#x7ECD;</h2>
+<hr>
+<blockquote>
+<p>&#x901A;&#x5E38;&#x673A;&#x5668;&#x90FD;&#x6709;&#x4E00;&#x7CFB;&#x5217;&#x8FDE;&#x7EED;&#x7F16;&#x53F7;&#x6216;&#x7F16;&#x5740;&#x7684;&#x5B58;&#x50A8;&#x5355;&#x5143;&#xFF0C;&#x8FD9;&#x4E9B;&#x5B58;&#x50A8;&#x5355;&#x5143;&#x53EF;&#x4EE5;&#x4EE5;&#x5355;&#x4E2A;&#x8FDB;&#x884C;&#x64CD;&#x7EB5;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4EE5;&#x8FDE;&#x7EED;&#x6210;&#x7EC4;&#x7684;&#x65B9;&#x5F0F;&#x64CD;&#x7EB5;&#xFF0C;&#x901A;&#x5E38;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x7684;&#x5B58;&#x50A8;&#x5355;&#x5143;&#x53EF;&#x4EE5;&#x5B58;&#x653E;&#x4E00;&#x4E2A;char&#x7C7B;&#x578B;&#x6570;&#x636E;&#xFF0C;&#x4E24;&#x4E2A;&#x5B57;&#x8282;&#x5B58;&#x50A8;&#x5355;&#x5143;&#x53EF;&#x4EE5;&#x5B58;&#x653E;&#x4E00;&#x4E2A;short&#x7C7B;&#x578B;&#x6570;&#x636E;&#xFF0C;&#x56DB;&#x4E2A;&#x5B57;&#x8282;&#x5B58;&#x50A8;&#x5355;&#x5143;&#x53EF;&#x4EE5;&#x5B58;&#x653E;&#x4E00;&#x4E2A;long&#x7C7B;&#x578B;&#x6570;&#x636E;&#xFF08;&#x6839;&#x636E;&#x673A;&#x5668;&#x4E0D;&#x540C;&#xFF0C;&#x6BCF;&#x79CD;&#x7C7B;&#x578B;&#x6240;&#x5360;&#x5B57;&#x8282;&#x4F1A;&#x6709;&#x6240;&#x4E0D;&#x540C;&#xFF09;<br>
+&#x6307;&#x9488;&#x662F;&#x7528;&#x6765;&#x5B58;&#x50A8;&#x4E00;&#x4E2A;&#x5730;&#x5740;&#x7684;&#x4E00;&#x7EC4;&#x5B58;&#x50A8;&#x5355;&#x5143;&#xFF08;&#x901A;&#x5E38;&#x662F;&#x4E24;&#x4E2A;&#x6216;&#x56DB;&#x4E2A;&#x5B57;&#x8282;&#xFF09;
+<br></p>
+</blockquote>
+<p><img src="http://7xocno.com1.z0.glb.clouddn.com/point-address.png" alt="zhizheng"></p>
+<h2 id="&#x6307;&#x9488;">&#x6307;&#x9488;</h2>
+<blockquote>
+<p><strong>&#x6307;&#x9488;&#x53D8;&#x91CF;p&#x4E0E;&#x6574;&#x578B;&#x53D8;&#x91CF;I&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x4E0D;&#x540C;&#xFF0C;&#x53EA;&#x662F;I&#x7528;&#x6765;&#x5B58;&#x50A8;&#x6574;&#x5F62;&#x53D8;&#x91CF;4&#x5728;&#x5B58;&#x50A8;&#x5355;&#x5143;&#x4E2D;&#x5360;&#x7528;4&#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x800C;P&#x7528;&#x6765;&#x5B58;&#x50A8;&#x53D8;&#x91CF;I&#x7684;&#x5730;&#x5740;&#x5728;&#x5B58;&#x50A8;&#x5355;&#x5143;&#x4E2D;&#x5360;&#x7528;4&#x4E2A;&#x5B57;&#x8282;(&#x8FD9;&#x91CC;&#x7684;4&#x4E2A;&#x5B57;&#x8282;&#x7528;&#x4E8E;&#x672C;&#x4F8B;&#xFF0C;&#x6839;&#x636E;&#x673A;&#x5668;&#x4E0D;&#x540C;&#x4F1A;&#x6709;&#x6240;&#x4E0D;&#x540C;)</strong><br></p>
+</blockquote>
+<h2 id="&#x5730;&#x5740;">&#x5730;&#x5740;</h2>
+<blockquote>
+<p><strong>p = &amp;I,&#x53D6;&#x5730;&#x5740;&#x8FD0;&#x7B97;&#x7B26;&amp;&#x53EF;&#x4EE5;&#x53D6;&#x51FA;&#x67D0;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5730;&#x5740;&#x7F16;&#x53F7;</strong></p>
+</blockquote>
+<h2 id="&#x8BE6;&#x8FF0;">&#x8BE6;&#x8FF0;</h2>
+<p><em>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF1A;</em></p>
+<ol>
+<li>&#x5728;&#x58F0;&#x660E;&#x6307;&#x9488;&#x53D8;&#x91CF;&#x65F6;&#xFF0C;&#x5982; int *P=&amp;I;&#x5E94;&#x8BE5;&#x628A;int *&#x770B;&#x505A;&#x6574;&#x4F53;,&#x8868;&#x793A;&#x58F0;&#x660E;P&#x4E3A;&#x6574;&#x578B;&#x6307;&#x9488;&#x3002;<br></li>
+<li>&#x58F0;&#x660E;&#x65F6;&#x5982;&#x679C;&#x628A;*P&#x770B;&#x505A;&#x6574;&#x4F53;&#x7684;&#x8BDD;&#xFF0C;&#x540E;&#x8FB9;&#x4F1A;&#x4EA7;&#x751F;&#x5F88;&#x591A;&#x7591;&#x60D1;&#xFF1A;&#x6BD4;&#x5982;&#xFF0C;&#x5728;&#x58F0;&#x660E;&#x65F6;*P=&amp;I;&#x8868;&#x793A;*P&#x4E3A;I&#x7684;&#x5730;&#x5740;&#xFF0C;&#x800C;&#x5728;&#x4F7F;&#x7528;&#x65F6;*P&#x53C8;&#x8868;&#x793A;I&#x7684;&#x503C;&#x3002;</li>
+<li><ul>
+<li>&#x6240;&#x4EE5;&#xFF0C;&#x5728;&#x58F0;&#x660E;&#x65F6;int *&#x662F;&#x7528;&#x4E8E;&#x8BF4;&#x660E;&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x4E3A;&#x6307;&#x9488;&#x53D8;&#x91CF;</li>
+<li>&#x4F7F;&#x7528;&#x65F6;&#x5728;&#x6307;&#x9488;&#x53D8;&#x91CF;&#x524D;&#x52A0;*,&#x5982;*P&#xFF0C;&#x8FD9;&#x4E2A;*P&#x4E0E;I&#x662F;&#x6709;&#x7B49;&#x4EF7;&#x610F;&#x4E49;&#x7684;&#xFF0C;&#x90FD;&#x662F;&#x7528;&#x4E8E;&#x64CD;&#x7EB5;I=4&#x8FD9;&#x4E2A;&#x5B58;&#x50A8;&#x5355;&#x5143;&#x7684;&#x53D8;&#x91CF;</li>
+<li>&#x5728;&#x8FD9;&#x91CC;&#x6709;&#x4E09;&#x4E2A;&#x53D8;&#x91CF;P&#xFF0C;*P&#xFF0C;I<ul>
+<li>P&#xFF1A;&#x6574;&#x5F62;&#x6307;&#x9488;&#x53D8;&#x91CF;&#xFF0C;&#x6307;&#x5411;&#x5B58;&#x50A8;&#x53D8;&#x91CF;I&#x5730;&#x5740;&#x7684;&#x5B58;&#x50A8;&#x5355;&#x5143;</li>
+<li>*P&#xFF1A;&#x6307;&#x5411;&#x53D8;&#x91CF;I&#x7684;&#x5B58;&#x50A8;&#x5355;&#x5143;</li>
+<li>I&#xFF1A;&#x6307;&#x5411;&#x53D8;&#x91CF;I&#x7684;&#x5B58;&#x50A8;&#x5355;&#x5143;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="&#x56FE;&#x89E3;">&#x56FE;&#x89E3;</h2>
+<hr>
+<p><center><a href="http://7xocno.com1.z0.glb.clouddn.com/point-address-detail.png" target="_blank">&#x770B;&#x5927;&#x56FE;</a>
+<img src="http://7xocno.com1.z0.glb.clouddn.com/point-address-detail.png" alt="http://7xocno.com1.z0.glb.clouddn.com/point-address-detail.png"></center></p>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
+<hr>
+<ol>
+<li>&#x5730;&#x5740;&#x8FD0;&#x7B97;&#x7B26;&amp;,&#x53EA;&#x80FD;&#x7528;&#x4E8E;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5373;&#x53D8;&#x91CF;&#x4E0E;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#xFF0C;&#x4E0D;&#x80FD;&#x7528;&#x4E8E;&#x8868;&#x8FBE;&#x5F0F;&#x3001;&#x5E38;&#x91CF;&#x3001;register&#x7C7B;&#x578B;&#x53D8;&#x91CF;</li>
+<li>&#x6BCF;&#x4E2A;&#x6307;&#x9488;&#x90FD;&#x5FC5;&#x987B;&#x6307;&#x5411;&#x67D0;&#x79CD;&#x7279;&#x5B9A;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF08;&#x4E00;&#x4E2A;&#x4F8B;&#x5916;&#x60C5;&#x51B5;&#x662F;&#x6307;&#x5411;void&#x6307;&#x9488;&#x53EF;&#x4EE5;&#x5B58;&#x653E;&#x6307;&#x5411;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x6307;&#x9488;&#xFF0C;&#x4F46;&#x4ED6;&#x4E0D;&#x80FD;&#x95F4;&#x63A5;&#x5F15;&#x7528;&#x81EA;&#x8EAB;&#xFF0C;&#x540E;&#x4F1A;&#x6709;&#x8BE6;&#x8FF0;&#xFF09;</li>
+<li>&#x5BF9;&#x4E8E;&#x4E24;&#x4E2A;&#x6307;&#x9488;&#x53D8;&#x91CF;iq = ip;&#x7531;&#x4E0A;&#x56FE;&#x53EF;&#x77E5;&#xFF0C;&#x6700;&#x7EC8;iq&#x4E0E;ip &#x6307;&#x5411;&#x540C;&#x4E00;&#x5BF9;&#x8C61;&#x3002;</li>
+<li>&#x5BF9;&#x4E8E;(*p)++&#xFF0C;&#x62EC;&#x53F7;&#x662F;&#x5FC5;&#x987B;&#x5F97;&#xFF0C;&#x4E00;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&#x7ED3;&#x5408;&#x987A;&#x5E8F;&#x4E3A;&#x4ECE;&#x53F3;&#x5230;&#x5DE6;</li>
+<li>*p&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x6307;&#x5411;&#x5730;&#x5740;&#x4E3A;p&#x7684;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;</li>
+</ol>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../zs/index.html" class="navigation navigation-prev " aria-label="Previous page: 第五章 指针与数组"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../zs/zh.html" class="navigation navigation-next " aria-label="Next page: 指针与函数参数"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

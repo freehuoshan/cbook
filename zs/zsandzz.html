@@ -1,0 +1,531 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>指针数组以及指向指针的指针 | My Awesome Book</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="../styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="../zs/duos.html" />
+    
+    
+    <link rel="prev" href="../zs/zzh.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="5.6" data-chapter-title="指针数组以及指向指针的指针" data-filepath="zs/zsandzz.md" data-basepath=".." data-revision="Wed Nov 18 2015 21:46:31 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="dy/index.html">
+            
+                
+                    <a href="../dy/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        第一章 导言
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="dy/rm.html">
+            
+                
+                    <a href="../dy/rm.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        入门
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="dy/bf.html">
+            
+                
+                    <a href="../dy/bf.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        变量与算术表达式
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="lxb/index.html">
+            
+            <span><b>2.</b> 第二章 类型、运算符、表达式</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="lkz/index.html">
+            
+            <span><b>3.</b> 第三章 流控制</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="hc/index.html">
+            
+            <span><b>4.</b> 第四章 函数与程序结构</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="zs/index.html">
+            
+                
+                    <a href="../zs/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        第五章 指针与数组
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="zs/zd.html">
+            
+                
+                    <a href="../zs/zd.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        指针与地址
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="zs/zh.html">
+            
+                
+                    <a href="../zs/zh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        指针与函数参数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="zs/zs.html">
+            
+                
+                    <a href="../zs/zs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        指针与数组
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="zs/ds.html">
+            
+                
+                    <a href="../zs/ds.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        地址算术运算
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="zs/zzh.html">
+            
+                
+                    <a href="../zs/zzh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        字符指针与函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.6" data-path="zs/zsandzz.html">
+            
+                
+                    <a href="../zs/zsandzz.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        指针数组以及指向指针的指针
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="zs/duos.html">
+            
+                
+                    <a href="../zs/duos.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        多维数组
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="zs/zsc.html">
+            
+                
+                    <a href="../zs/zsc.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        指针数组初始化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="zs/zduo.html">
+            
+                
+                    <a href="../zs/zduo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        指针与多维数组
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="jg/index.html">
+            
+            <span><b>6.</b> 第六章 结构</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="ss/index.html">
+            
+            <span><b>7.</b> 第七章 输入与输出</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="unix/index.html">
+            
+            <span><b>8.</b> 第八章 UNIX系统接口</span>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >My Awesome Book</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="&#x6307;&#x9488;&#x6570;&#x7EC4;">&#x6307;&#x9488;&#x6570;&#x7EC4;</h2>
+<p><img src="http://7xocno.com1.z0.glb.clouddn.com/point-addr.png" alt="point-addr"></p>
+<h2 id="&#x4EE3;&#x7801;">&#x4EE3;&#x7801;</h2>
+<blockquote>
+<p>&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x662F;&#x4E00;&#x4E2A;&#x8F93;&#x5165;&#x5B57;&#x7B26;&#xFF0C;&#x7136;&#x540E;&#x6839;&#x636E;&#x6BCF;&#x884C;&#x6392;&#x5E8F;&#xFF0C;&#x6700;&#x540E;&#x8F93;&#x51FA;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x91CC;&#x8FB9;&#x51E0;&#x4E4E;&#x6D89;&#x53CA;&#x4E86;C&#x8BED;&#x8A00;&#x6307;&#x9488;&#x7684;&#x6240;&#x6709;&#x7EC6;&#x8282;</p>
+</blockquote>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+#define MAXLINES 3                                       /* &#x6253;&#x5370;&#x884C;&#x6570;&#x5CF0;&#x503C; */
+char *lineptr[MAXLINES];                                /* &#x6307;&#x9488;&#x6570;&#x7EC4;&#xFF0C;&#x5143;&#x7D20;&#x6307;&#x5411;&#x6BCF;&#x884C;&#x9996;&#x5730;&#x5740; */
+
+int readlines(char *lineptr[], int nlines);
+void writelines(char *lineptr[], int nlines);
+void qsort(char *lineptr[], int left, int right);
+
+//&#x5BF9;&#x8F93;&#x5165;&#x884C;&#x6392;&#x5E8F;
+main()
+{
+    int nlines;                                         /* &#x8F93;&#x5165;&#x7684;&#x884C;&#x6570; */
+    if ((nlines = readlines(lineptr, MAXLINES)) &gt;= 0) {
+        qsort(lineptr, 0, nlines - 1);
+        writelines(lineptr, nlines);
+        return 0;
+    } else {
+        printf(&quot;error: input too big to sort\n&quot;);
+        return 1;
+    }
+}
+
+#define MAXLEN 1000                                     /* &#x6BCF;&#x884C;&#x957F;&#x5EA6;&#x5CF0;&#x503C; */
+
+int getline2(char *, int);
+char *alloc(int);
+
+/* &#x8BFB;&#x53D6;&#x8F93;&#x5165;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x8FD4;&#x56DE;&#x884C;&#x6570; */
+int readlines(char *lineptr[], int maxlines)
+{
+    int len, nlines;                                    /* len:&#x6BCF;&#x884C;&#x957F;&#x5EA6;&#xFF0C;nlines:&#x884C;&#x6570; */
+    char *p, line[MAXLEN];
+    nlines = 0;
+    while ((len = getline2(line, MAXLEN)) &gt; 0){
+        if (nlines &gt;= maxlines || (p = alloc(len)) == NULL)
+            return 1;
+        else {
+//          line[len - 1]= &apos;\0&apos;;       /* delete newline */
+            strcpy(p, line);                            /* &#x5C06;&#x5B57;&#x7B26;&#x6570;&#x7EC4;&#x5185;&#x5BB9;&#x62F7;&#x8D1D;&#x5230;p&#x6307;&#x5411;&#x7684;&#x5730;&#x5740; */
+            lineptr[nlines++] = p;
+        }
+    }
+    return nlines;
+}
+
+/* &#x6253;&#x5370;&#x8F93;&#x5165;&#x6240;&#x6709;&#x884C; */
+void writelines(char *lineptr[], int nlines)
+{
+    int i;
+    for (i = 0; i &lt; nlines; i++)
+    printf(&quot;%s\n&quot;, lineptr[i]);        
+}
+
+
+/* &#x8BFB;&#x5199;&#x8F93;&#x5165;&#x5230;s&#x5B57;&#x7B26;&#x4E2D;&#xFF0C;&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x6570;&#x7EC4;&#x957F;&#x5EA6; */
+int getline2(char *s,int lim)
+{
+    int c, i;
+    for (i=0; i &lt; lim - 1 &amp;&amp; (c=getchar())!=EOF &amp;&amp; c!=&apos;\n&apos;; ++i)
+        s[i] = c;
+    if (c == &apos;\n&apos;) {
+        s[i] = c;
+        ++i;
+    }
+    s[i] = &apos;\0&apos;;
+    return i;
+}
+
+#define ALLOCSIZE 10000             /* &#x7ED9;&#x4E88;&#x7A7A;&#x95F4;&#x603B;&#x5927;&#x5C0F; */
+static char allocbuf[ALLOCSIZE];    /* &#x5C06;&#x603B;&#x7A7A;&#x95F4;&#x62BD;&#x8C61;&#x4E3A;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x5B9E;&#x8D28;&#x8FD8;&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x9488; */
+static char *allocp = allocbuf;     /* &#x95F2;&#x7F6E;&#x7A7A;&#x95F4;&#x8D77;&#x59CB;&#x6307;&#x9488;allocp&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x4E3A;&#x6570;&#x7EC4;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E; */
+
+ /* &#x5206;&#x914D;&#x7A7A;&#x95F4;&#x540E;&#xFF0C;&#x8FD4;&#x56DE;&#x5206;&#x914D;&#x7A7A;&#x95F4;&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x6307;&#x9488; */
+char *alloc(int n)
+{
+    if (allocbuf + ALLOCSIZE - allocp&gt;= n)
+    {
+        allocp += n;
+        return allocp-n;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+/* qsort: sort v[left]...v[right] into increasing order */
+void qsort(char *v[], int left, int right)
+{
+    int i, last;
+    void swap(char *v[], int i, int j);
+    if (left &gt;= right) /* do nothing if array contains */
+    return;
+    /* fewer than two elements */
+    swap(v, left, (left + right)/2);
+    last = left;
+    for (i = left+1; i &lt;= right; i++)
+        if (strcmp(v[i], v[left]) &lt; 0)
+            swap(v, ++last, i);
+    swap(v, left, last);
+    qsort(v, left, last-1);
+    qsort(v, last+1, right);
+}
+
+
+/* swap: interchange v[i] and v[j] */
+void swap(char *v[], int i, int j)
+{
+    char *temp;
+    temp = v[i];
+    v[i] = v[j];
+    v[j] = temp;
+}
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../zs/zzh.html" class="navigation navigation-prev " aria-label="Previous page: 字符指针与函数"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../zs/duos.html" class="navigation navigation-next " aria-label="Next page: 多维数组"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
